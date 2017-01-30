@@ -2,7 +2,8 @@
 var gulp = require('gulp'),
     autoprefixerModule = require('gulp-autoprefixer'),
     sassModule = require('gulp-sass'),
-    sourcemapsModule = require('gulp-sourcemaps');
+    sourcemapsModule = require('gulp-sourcemaps'),
+    watchModule = require('gulp-watch');
 
 
 // Directories
@@ -15,6 +16,9 @@ var sassTranspileOptions = {
     outputStyle: 'expanded'
 };
 
+gulp.task('watch', function(){
+    gulp.watch(sassSrcFolder, ['sass']);
+});
 
 gulp.task('sass', function(){
     return gulp
@@ -25,5 +29,4 @@ gulp.task('sass', function(){
         .pipe(gulp.dest(sassDestFolder));
 });
 
-
-gulp.task('default', ['sass'], function(){});
+gulp.task('default', ['sass', 'watch'], function(){});
