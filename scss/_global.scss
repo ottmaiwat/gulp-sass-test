@@ -3,7 +3,36 @@
   padding: 0 0;
   box-sizing: border-box;
 }
+$color-green: #10AB7F;
+$primary-color: #444;
+$secondary-color: #b4da55;
+$tertiary-color: #eee;
+$color-ui-link: #33acff;
+$link-decoration: none;
+$link-decoration-underline: underline;
+
+//Heading
 
 html, body {
-  background-color: blue;
+  font: 100% Hlvetica, sans-serif;
+}
+
+body > h1.mainHeading {
+  color: $color-green;
+  margin-bottom: rem(20px);
+  margin-top: rem(20px);
+}
+
+a {
+  background-color: transparent;
+  color: $color-ui-link;
+  text-decoration: $link-decoration;
+
+  &:focus,
+  &:active,
+  &:hover {
+    text-decoration: $link-decoration-underline;
+  }
+
+
 }

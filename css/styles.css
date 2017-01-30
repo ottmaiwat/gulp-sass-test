@@ -5,7 +5,23 @@
 }
 
 html, body {
-  background-color: blue;
+  font: 100% Hlvetica, sans-serif;
+}
+
+body > h1.mainHeading {
+  color: #10AB7F;
+  margin-bottom: rem(20px);
+  margin-top: rem(20px);
+}
+
+a {
+  background-color: transparent;
+  color: #33acff;
+  text-decoration: none;
+}
+
+a:focus, a:active, a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
