@@ -6,8 +6,8 @@ var gulp = require('gulp'),
 
 
 // Directories
-var sassSrcFolder = '/scss/*.scss',
-    sassDestFolder = '/css';
+var sassSrcFolder = './scss/*.scss',
+    sassDestFolder = './css';
 
 
 var sassTranspileOptions = {
