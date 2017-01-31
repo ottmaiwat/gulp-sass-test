@@ -1,1 +1,14 @@
 $color-green: #10AB7F;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.main {
+  margin: 0 auto;
+  border:1px solid red;
+}
+
+.box { @include border-radius(10px); }
