@@ -1,4 +1,5 @@
 //Map
+
 $font-weights: (
   hairline: 100,
   extra-light: 200,
@@ -31,3 +32,7 @@ $font-thin: $font-light;
   @if map-has-key($font-weight, $weight) != true {
     @warn "#{weight} not found"; }
   @return map-get($font-weight, $weight); }
+
+  h2 {
+      font-family: 'Sofia';font-size: 22px;
+  }

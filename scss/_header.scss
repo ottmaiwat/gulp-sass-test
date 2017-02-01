@@ -1,7 +1,8 @@
 .main {
   padding: 16px;
   margin-top: 50px;
-  height: 1500px;
+  height: auto;
+  overflow: hidden;
 }
 nav {
     ul.topnav {
@@ -10,9 +11,10 @@ nav {
       padding: 0;
       overflow: hidden;
       background-color: #533F5C;
-      position: fixed;
+      position: relative;
       top: 0;
       width: 100%;
+      z-index: 2;
     }
     li.lsnav {
       float:left;
@@ -61,6 +63,26 @@ nav {
     text-align: left;
     }
 
+    input.search[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('../images/searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        z-index: 2;
+    }
+
+    input[type=text]:focus {
+        width: 100%;
+        outline:none;
+    }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 .show {display:block;}
