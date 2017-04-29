@@ -8156,6 +8156,18 @@ body {
   padding-bottom: 32.75%;
 }
 
+@media only screen and (min-width: 768px) {
+  .embed-responsive-16by9 {
+    padding-bottom: 39%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .embed-responsive-16by9 {
+    padding-bottom: 32.75%;
+  }
+}
+
 .footer {
   padding: 0px;
 }
