@@ -8012,7 +8012,7 @@ a:hover {
 
 .btn-primary,
 .color-primary-0 {
-  background-color: #064C86;
+  background-color: #064b86;
   border-color: #2874B3;
 }
 
@@ -8042,6 +8042,14 @@ nav .navbar-brand {
   font-size: 30px;
 }
 
+nav.navbar.shrink {
+  min-height: 35px;
+}
+
+nav.navbar.shrink .navbar-brand {
+  font-size: 25px;
+}
+
 .navbar-toggle {
   margin: 13px 15px 13px 0;
 }
@@ -8051,14 +8059,6 @@ a {
   padding-bottom: 20px !important;
   padding-top: 20px !important;
   transition: all 0.3s ease;
-}
-
-nav.navbar.shrink {
-  min-height: 35px;
-}
-
-nav.navbar.shrink .navbar-brand {
-  font-size: 25px;
 }
 
 a {
@@ -8132,8 +8132,11 @@ li.active > a {
 }
 
 body {
-  font: 400 14px/22px 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-  color: #666;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #666666;
   height: 100%;
   padding-top: 100px;
 }

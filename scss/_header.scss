@@ -1,24 +1,33 @@
+$primaryColor: #064b86;
+
 .btn-primary,
-.color-primary-0 { background-color: #064C86; 
-                    border-color: #2874B3 ;}    
+.color-primary-0 { background-color: $primaryColor; 
+                    border-color: $borderColor ;}    
 
 .btn-primary:hover,
-.color-secondary-1-0 { background-color: #2874B3;
+.color-secondary-1-0 { background-color: $borderColor;
                         border-color: #095EA6; }    
 
 
 .primary-nav-color {
-    background-color: #064b86;
+    background-color: $primaryColor;
 }
 
-.navbar-collapse li.active > a { color: #2874B3; }
-.nav li > a:hover { background-color: #2874B3; }
+.navbar-collapse li.active > a { color: $borderColor; }
+.nav li > a:hover { background-color: $borderColor; }
 .navbar-collapse li > a { color: #ffffff; }
 
 nav {
   .navbar-brand {
     font-size: 30px;
     }
+}
+
+nav.navbar.shrink {
+    min-height: 35px;
+    .navbar-brand {
+    font-size: 25px;
+  }
 }
 
 .navbar-toggle {
@@ -30,13 +39,6 @@ a {
     padding-bottom: 20px !important;
     padding-top: 20px !important;
     transition: all 0.3s ease;
-}
-
-nav.navbar.shrink {
-    min-height: 35px;
-    .navbar-brand {
-    font-size: 25px;
-  }
 }
 
 a {
@@ -54,14 +56,14 @@ a {
     margin: 5px;
     }  
 
-    
+
 li.active > a {
     background-color: #fff;
     }
 
 .bg-primary {
     color: #ffffff;
-    background-color: #cfcfcf;
+    background-color: $buttonColor;
 }
 
 .navbar-brand {

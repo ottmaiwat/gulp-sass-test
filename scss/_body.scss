@@ -1,3 +1,13 @@
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
 
 .paragraphFormat p,
 .paragraphFormat ul {
@@ -9,8 +19,11 @@
 }
 
 body {
-    font: 400 14px/22px 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-    color: #666;
+	font-family: $base-font-family;
+	font-weight: $regular;
+	font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $bodyFontColor;
     height: 100%;
     padding-top: 100px;
 }
