@@ -1,9 +1,16 @@
-.footcontainer {
-  padding: 16px;
-  margin: 20px auto;
+
+.footer {
+    padding: 0px;
 }
-#map {
-  height: 400px;
-  overflow: hidden;
-  margin-bottom:20px;
+
+.footer-section {
+    color: #9c9c9c;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    padding: 20px 0 13px;
+    word-spacing: 1px;
+    position: relative;
+    z-index: 3;
+    background-color: #444444;
 }

@@ -1,307 +1,139 @@
-<!doctype html>
-<html class="no-js" lang="">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>My sass page</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="css/styles.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-      <link href='http://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-      <script src="https:https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-   </head>
-   <body>
-      <header>
-         <nav>
-            <ul class="topnav" id="myTopnav">
-               <li class="lsnav"><a class="active" href="#home">Home</a></li>
-               <li class="lsnav"><a href="news.html">News</a></li>
-               <li class="lsnav"><a href="#contact">Contact</a></li>
-               <li class="lsnav"><a href="#about">About</a></li>
-               <li class="dropdown">
-                  <a href="javascript:void(0)" onclick="myFunction()" class="dropbtn">Dropdown</a>
-                  <div class="dropdown-content" id="myDropdown">
-                     <a href="#">Link 1</a>
-                     <a href="#">Link 2</a>
-                     <a href="#">Link 3</a>
-                  </div>
-               </li>
-               <li class="lsnav" style="float:right">
-                 <form>
-                   <input class="search" type="text" name="search" placeholder="Search..">
-                 </form>
-               </li>
-            </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap - Prebuilt Layout</title>
 
-         </nav>
-
-      </header>
-      <!-- slideshow -->
-      <section>
-         <article>
-            <div class="main col-9">
-               <div class="slideshow-container">
-                  <div class="mySlides fade">
-                     <div class="numbertext">slide 1</div>
-                     <img src="images/slide1.jpg" style="width:100%">
-                     <div class="text">Sunset</div>
-                  </div>
-                  <div class="mySlides fade">
-                     <div class="numbertext">slide 2</div>
-                     <img src="images/slide2.jpg" style="width:100%">
-                     <div class="text">Rocky beach</div>
-                  </div>
-                  <div class="mySlides fade">
-                     <div class="numbertext">slide 3</div>
-                     <img src="images/slide3.jpg" style="width:100%">
-                     <div class="text">Beach</div>
-                  </div>
-                  <a class="prev" onclick="plusSlides(-1)">❮</a>
-                  <a class="next" onclick="plusSlides(1)">❯</a>
-               </div>
-               <br>
-               <div style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span>
-                  <span class="dot" onclick="currentSlide(2)"></span>
-                  <span class="dot" onclick="currentSlide(3)"></span>
-               </div>
-               <!-- Todo list -->
-               <row class="col-6">
-                  <div id="myDIV" class="header">
-                     <h2 style="margin:5px">My To Do List</h2>
-                     <input type="text" id="myInputTodos" placeholder="Title...">
-                     <span onclick="newElement()" class="addBtn">Add</span>
-                  </div>
-                  <ul id="myUL" class="todos">
-                     <li class="listtodo">Hit the gym</li>
-                     <li class="listtodo checked">Pay bills</li>
-                     <li class="listtodo">Meet George</li>
-                     <li class="listtodo">Buy eggs</li>
-                     <li class="listtodo">Read a book</li>
-                     <li class="listtodo">Organize office</li>
-                  </ul>
-               </row>
-               <!-- Filter table -->
-               <row class="col-6">
-                  <input type="text" id="myFilterInput" onkeyup="myFilter()" placeholder="Search for names..">
-                  <table id="myTable">
-                     <tr class="header">
-                        <th style="width:60%;">Name</th>
-                        <th style="width:40%;">Country</th>
-                     </tr>
-                     <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Germany</td>
-                     </tr>
-                     <tr>
-                        <td>Berglunds snabbkop</td>
-                        <td>Sweden</td>
-                     </tr>
-                     <tr>
-                        <td>Island Trading</td>
-                        <td>UK</td>
-                     </tr>
-                     <tr>
-                        <td>Koniglich Essen</td>
-                        <td>Germany</td>
-                     </tr>
-                     <tr>
-                     <tr>
-                        <td>Laughing Bacchus Winecellars</td>
-                        <td>Canada</td>
-                     </tr>
-                     <tr>
-                        <td>Magazzini Alimentari Riuniti</td>
-                        <td>Italy</td>
-                     </tr>
-                     <tr>
-                        <td>North/South</td>
-                        <td>UK</td>
-                     </tr>
-                  </table>
-               </row>
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- Feature CSS -->
+<link href="css/custom-style.css" rel="stylesheet">
+<!-- FONTS -->
+<link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper"> 
+  <!-- USING BOOTSTRAP 3.0.3 -->
+  <div class="container">
+    <nav class="navbar color-primary-0 navbar-fixed-top">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"><img src="images/DisputeBills.png"></a> </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav pull-right dispute-bill-wrapper">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Link</a></li>
+          <li class="active"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+      
+    </nav>
+  </div>
+  
+  <div class="container content">
+    <div class="row">
+      <h1 class="text-center padding-bottom-30">Contact Us</h1>
+      <div class="text-center col-md-5">
+        <form class="form-horizontal">
+          <fieldset>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-6 control-label" for="textinput">Name *</label>
+              <div class="col-md-6">
+                <input id="textinput" name="textinput" placeholder="Enter Your Full Name" class="form-control input-md" required type="text">
+              </div>
             </div>
-         </article>
-      </section>
-      <section>
-         <article>
-            <div class="main col-9">
-              <!-- Accordion -->
-              <button class="accordion">Section 1</button>
-                <div class="panel">
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-6 control-label" for="title">Title</label>
+              <div class="col-md-6">
+                <input id="title" name="title" placeholder="Job Title" class="form-control input-md" type="text">
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-6 control-label" for="company">Company</label>
+              <div class="col-md-6">
+                <input id="company" name="company" placeholder="Enter your Company Name" class="form-control input-md" type="text">
+              </div>
+            </div>
+            
+            <!-- Prepended text-->
+            <div class="form-group">
+              <label class="col-md-6 control-label" for="Phone">Mobile Number *</label>
+              <div class="col-md-6">
+                <div class="input-group">
+                  <input id="Phone" name="Phone" class="form-control" placeholder="Mobile" required type="text">
                 </div>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-6 control-label" for="website">Website</label>
+              <div class="col-md-6">
+                <input id="website" name="website" placeholder="Enter Your Website" class="form-control input-md" type="text">
+                <span class="help-block">Ex: www.resguardo.com</span> </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-6 control-label" for="email">E Mail *</label>
+              <div class="col-md-6">
+                <input id="email" name="email" placeholder="Enter Your E mail" class="form-control input-md" required type="text">
+              </div>
+            </div>
+            
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-6 control-label" for="Message">Message *</label>
+              <div class="col-md-6">
+                <textarea class="form-control" id="Message" name="Message">Enter Your Message *</textarea>
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-6 control-label" for="singlebutton"></label>
+              <div class="col-md-6">
+                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Contact Us</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="col-md-7">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4013.1798433698127!2d-94.71543087085763!3d38.97555278742798!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x56e73ee6455a7209!2sUhlig+LLC!5e0!3m2!1sen!2sus!4v1493412473259" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="text-center col-sm-12 footer">
+    <footer class="footer-section">
+      <p class="mbr-footer__copyright">Copyright (c) 2017 BeachBar. <a href="#" class="text-gray">License</a></p>
+    </footer>
+  </div>
+</div>
 
-                <button class="accordion">Section 2</button>
-                <div class="panel">
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                </div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
 
-                <button class="accordion">Section 3</button>
-                <div class="panel">
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                  <p>Some text some text some text some text..</p>
-                </div>
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script> 
 
-               <!-- RoundCard -->
-               <article>
-                  <div class="roundCard col-12">
-                    <h2>Round Card</h2>
-                    <div class="card">
-                      <img src="images/img_avatar1.png" alt="Avatar1" style="width:100%">
-                      <div class="container">
-                        <h4><b>Jane Doe</b></h4>
-                        <p>Interior Designer</p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="images/img_avatar2.jpg" alt="Avatar2" style="width:100%">
-                      <div class="container">
-                        <h4><b>Jane Doe</b></h4>
-                        <p>Interior Designer</p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="images/img_avatar3.jpg" alt="Avatar3" style="width:100%">
-                      <div class="container">
-                        <h4><b>Jane Doe</b></h4>
-                        <p>Interior Designer</p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="images/img_avatar4.png" alt="Avatar4" style="width:100%">
-                      <div class="container">
-                        <h4><b>Jane Doe</b></h4>
-                        <p>Interior Designer</p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="images/img_avatar3.jpg" alt="Avatar3" style="width:100%">
-                      <div class="container">
-                        <h4><b>Jane Doe</b></h4>
-                        <p>Interior Designer</p>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img src="images/img_avatar4.png" alt="Avatar4" style="width:100%">
-                      <div class="container">
-                        <h4><b>Jane Doe</b></h4>
-                        <p>Interior Designer</p>
-                      </div>
-                    </div>
-                  </div>
-               </article>
-               <article>
-                 <!-- Equal Height Columns -->
-                 <row class="col-12">
-                   <h2 class="column">Equal Height Columns</h2>
-                    <p class="eqtext">Make the columns match the height of the tallest column.</p>
-
-                    <div class="col-container">
-                      <div class="col" style="background:orange">
-                        <h2>Column 1</h2>
-                        <p>Hello World</p>
-                      </div>
-
-                      <div class="col" style="background:yellow">
-                        <h2>Column 2</h2>
-                        <p>Hello World!</p>
-                        <p>Hello World!</p>
-                        <p>Hello World!</p>
-                        <p>Hello World!</p>
-                      </div>
-
-                      <div class="col" style="background:orange">
-                        <h2>Column 3</h2>
-                        <p>Some other text..</p>
-                        <p>Some other text..</p>
-                      </div>
-                    </div>
-                  </row>
-               </article>
-               <article>
-                 <!-- Pricing table -->
-                 <row class="col-12">
-                   <h2 class="column">Responsive Pricing Tables</h2>
-                      <p class="eqtext">Resize the browser window to see the effect.</p>
-
-                      <div class="columns">
-                        <ul class="price">
-                          <li class="header">Basic</li>
-                          <li class="grey">$ 9.99 / year</li>
-                          <li>10GB Storage</li>
-                          <li>10 Emails</li>
-                          <li>10 Domains</li>
-                          <li>1GB Bandwidth</li>
-                          <li class="grey"><a href="#" class="button">Sign Up</a></li>
-                        </ul>
-                      </div>
-
-                      <div class="columns">
-                        <ul class="price">
-                          <li class="header" style="background-color:#4CAF50">Pro</li>
-                          <li class="grey">$ 24.99 / year</li>
-                          <li>25GB Storage</li>
-                          <li>25 Emails</li>
-                          <li>25 Domains</li>
-                          <li>2GB Bandwidth</li>
-                          <li class="grey"><a href="#" class="button">Sign Up</a></li>
-                        </ul>
-                      </div>
-
-                      <div class="columns">
-                        <ul class="price">
-                          <li class="header">Premium</li>
-                          <li class="grey">$ 49.99 / year</li>
-                          <li>50GB Storage</li>
-                          <li>50 Emails</li>
-                          <li>50 Domains</li>
-                          <li>5GB Bandwidth</li>
-                          <li class="grey"><a href="#" class="button">Sign Up</a></li>
-                        </ul>
-                      </div>
-                      <!-- Switch check -->
-                      <label class="switch">
-                        <input type="checkbox" checked>
-                        <div class="slider round"></div>
-                      </label>
-                      <!-- Animated font-awesome -->
-                      <div id="div1" class="fa"></div>
-                      <p class="fontalign">This example demonstrates how to use an icon library to make an animated effect.</p>
-                 </row>
-               </article>
-      </section>
-      <footer class="footcontainer col-9">
-        <div id="map"></div>
-        <p>Copyright 2016 Ottster</p>
-      </footer>
-      <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
-      <script src="js/global.js"></script>
-      <script>
-        function myMap() {
-          var mapCanvas = document.getElementById("map");
-          var mapOptions = {
-            center: new google.maps.LatLng(38.9, -94.6), zoom: 10
-          };
-          var map = new google.maps.Map(mapCanvas, mapOptions);
-        }
-        </script>
-      <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-   </body>
+<!-- Custom Js --> 
+<script src="js/custom.js"></script>
+</body>
 </html>

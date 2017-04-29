@@ -1,38 +1,28 @@
-//Map
 
-$font-weights: (
-  hairline: 100,
-  extra-light: 200,
-  light: 300,
-  regular: 400,
-  book: 500,
-  medium: 600,
-  bold: 700,
-  black: 800,
-  heavy: 900 );
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTb3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
 
-$font-light: map-get($font-weights, light);
-$font-normal: map-get($font-weights, normal);
-$font-medium: map-get($font-weights, medium);
-$font-bold: $font-medium;
-$font-black: $font-medium;
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/wMws1cEtxWZc6AZZIpiqWALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
 
-// Font Family
-$font-brand: 'SprintSansWeb';
-$font-unicode-sanserif: 'Helvetica', 'Arial Unicode MS', sans-serif;
-$font-brand-stack: $font-brand, $font-unicode-sanserif;
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
 
-// Temporary Fallback
-// TODO: go through repositories and replace all $font-thin with $font-light
-$font-thin: $font-light;
-
-
-//Function
-@function font-weight($weight: $default-map-font-weight) {
-  @if map-has-key($font-weight, $weight) != true {
-    @warn "#{weight} not found"; }
-  @return map-get($font-weight, $weight); }
-
-  h2 {
-      font-family: 'Sofia';font-size: 22px;
-  }
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
