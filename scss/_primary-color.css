@@ -1,13 +1,10 @@
 // Sites Color
-$borderColor: #2874B3;
 $primaryButtonColor: #064b86;
+$primaryNavColor: #064b86;
 $buttonDark: darken($primaryButtonColor, 10%);
 $buttonDarker: lighten($primaryButtonColor, 10%);
 $primaryBorderColor: #2874B3;
-$buttonColor: #cfcfcf;
-
-$bodyFontColor: #666666;
-
+$primaryBorderColorHover: #095EA6;
 
 .btn-primary,
 .color-primary-0 { background-color: $primaryButtonColor; 
@@ -15,9 +12,8 @@ $bodyFontColor: #666666;
 
 .btn-primary:hover,
 .color-secondary-1-0 { background-color: lighten($primaryButtonColor, 10%);
-                        border-color: #095EA6; }	
-
+                        border-color: $primaryBorderColorHover; }	
 
 .primary-nav-color {
-    background-color: #064b86;
+    background-color: $primaryNavColor;
 }
