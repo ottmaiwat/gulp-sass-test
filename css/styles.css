@@ -1,166 +1,3 @@
-html,
-body,
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-dl,
-li,
-dt,
-dd,
-p,
-blockquote,
-pre,
-form,
-fieldset,
-table,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-
-a,
-a:hover {
-  color: #fff;
-}
-
-:focus {
-  -moz-outline-style: none;
-}
-
-.padding-bottom-5 {
-  padding-bottom: 5px;
-}
-
-.padding-bottom-7 {
-  padding-bottom: 7px;
-}
-
-.padding-bottom-10 {
-  padding-bottom: 10px;
-}
-
-.padding-bottom-15 {
-  padding-bottom: 15px;
-}
-
-.padding-bottom-17 {
-  padding-bottom: 17px;
-}
-
-.padding-bottom-30 {
-  padding-bottom: 30px;
-}
-
-.wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
-.content {
-  padding-bottom: 250px;
-}
-
-.navbar-collapse li.active > a {
-  color: #2874B3;
-}
-
-.nav li > a:hover {
-  background-color: #2874B3;
-}
-
-.navbar-collapse li > a {
-  color: #ffffff;
-}
-
-nav .navbar-brand {
-  font-size: 30px;
-}
-
-.navbar-toggle {
-  margin: 13px 15px 13px 0;
-}
-
-a {
-  font-size: 18px;
-  padding-bottom: 20px !important;
-  padding-top: 20px !important;
-  transition: all 0.3s ease;
-}
-
-nav.navbar.shrink {
-  min-height: 35px;
-}
-
-nav.navbar.shrink .navbar-brand {
-  font-size: 25px;
-}
-
-a {
-  font-size: 15px;
-  padding-bottom: 10px !important;
-  padding-top: 10px !important;
-}
-
-.navbar-toggle {
-  margin: 8px 15px 8px 0;
-  padding: 4px 5px;
-}
-
-.dispute-bill-wrapper {
-  margin: 5px;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTb3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff");
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/wMws1cEtxWZc6AZZIpiqWALUuEpTyoUstqEm5AMlJo4.woff) format("woff");
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSr3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff");
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzL3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff");
-}
-
-.paragraphFormat p,
-.paragraphFormat ul {
-  margin: 0 0 15px;
-}
-
-.paragraphFormat li {
-  margin: 0 0 5px 30px;
-}
-
-body {
-  font: 400 14px/22px 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-  color: #666;
-  height: 100%;
-  padding-top: 100px;
-}
-
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -8104,6 +7941,169 @@ button.close {
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  color: #fff;
+}
+
+:focus {
+  -moz-outline-style: none;
+}
+
+.padding-bottom-5 {
+  padding-bottom: 5px;
+}
+
+.padding-bottom-7 {
+  padding-bottom: 7px;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
+
+.padding-bottom-15 {
+  padding-bottom: 15px;
+}
+
+.padding-bottom-17 {
+  padding-bottom: 17px;
+}
+
+.padding-bottom-30 {
+  padding-bottom: 30px;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  padding-bottom: 250px;
+}
+
+.navbar-collapse li.active > a {
+  color: #2874B3;
+}
+
+.nav li > a:hover {
+  background-color: #2874B3;
+}
+
+.navbar-collapse li > a {
+  color: #ffffff;
+}
+
+nav .navbar-brand {
+  font-size: 30px;
+}
+
+.navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+
+a {
+  font-size: 18px;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+  transition: all 0.3s ease;
+}
+
+nav.navbar.shrink {
+  min-height: 35px;
+}
+
+nav.navbar.shrink .navbar-brand {
+  font-size: 25px;
+}
+
+a {
+  font-size: 15px;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+}
+
+.navbar-toggle {
+  margin: 8px 15px 8px 0;
+  padding: 4px 5px;
+}
+
+.dispute-bill-wrapper {
+  margin: 5px;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTb3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/wMws1cEtxWZc6AZZIpiqWALUuEpTyoUstqEm5AMlJo4.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSr3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzL3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff");
+}
+
+.paragraphFormat p,
+.paragraphFormat ul {
+  margin: 0 0 15px;
+}
+
+.paragraphFormat li {
+  margin: 0 0 5px 30px;
+}
+
+body {
+  font: 400 14px/22px 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  color: #666;
+  height: 100%;
+  padding-top: 100px;
+}
+
 .footer {
   padding: 0px;
 }
