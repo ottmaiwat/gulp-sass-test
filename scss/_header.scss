@@ -52,4 +52,23 @@ a {
     
 .dispute-bill-wrapper {
     margin: 5px;
-    }    
+    }  
+
+    
+li.active > a {
+    background-color: #fff;
+    }
+
+.bg-primary {
+    color: #ffffff;
+    background-color: #cfcfcf;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand>img {
+    height: 100%;
+    width: auto;
+}  
