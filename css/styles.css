@@ -8007,7 +8007,7 @@ a:hover {
 }
 
 .content {
-  padding-bottom: 250px;
+  padding-bottom: 110px;
 }
 
 .btn-primary,
@@ -8144,6 +8144,10 @@ body {
   color: #666666;
   height: 100%;
   padding-top: 100px;
+}
+
+.embed-responsive-16by9 {
+  padding-bottom: 32.75%;
 }
 
 .footer {
