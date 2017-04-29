@@ -8032,6 +8032,7 @@ a:hover {
 
 .nav li > a:hover {
   background-color: #2874B3;
+  color: #ffffff;
 }
 
 .navbar-collapse li > a {

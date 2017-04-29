@@ -1,6 +1,7 @@
 $primaryColor: #064b86;
 $borderColor: #2874B3;
 $buttonColor: #cfcfcf;
+$fontColorHover: #ffffff;
 
 .btn-primary,
 .color-primary-0 { background-color: $primaryColor; 
@@ -15,8 +16,15 @@ $buttonColor: #cfcfcf;
     background-color: $primaryColor;
 }
 
-.navbar-collapse li.active > a { color: $borderColor; }
-.nav li > a:hover { background-color: $borderColor; }
+.navbar-collapse li.active > a { 
+    color: $borderColor; 
+}
+
+.nav li > a:hover { 
+    background-color: $borderColor; 
+    color: $fontColorHover;
+}
+
 .navbar-collapse li > a { color: #ffffff; }
 
 nav {
