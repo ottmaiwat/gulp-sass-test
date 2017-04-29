@@ -8039,8 +8039,8 @@ a:hover {
   color: #ffffff;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: black;
+.navbar-toggle .icon-bar {
+  background-color: #fff;
 }
 
 nav .navbar-brand {
