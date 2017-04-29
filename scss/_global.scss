@@ -32,27 +32,9 @@
     padding-bottom: 20px;
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { 
+@media only screen and (min-width: 768px) {
 	.content {
 	    padding-bottom: 110px;
-	}
- }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { 
-	.content {
-	    padding-bottom: 110px;
-	}
- }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { 
-	.content {
-	    padding-bottom: 110px;
-	}
- }
-
-.content {
-    padding-bottom: 110px;
+	}		
 }
+
