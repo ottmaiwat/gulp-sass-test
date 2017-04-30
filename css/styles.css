@@ -7968,6 +7968,11 @@ td {
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 a,
 a:hover {
   color: #fff;
@@ -8007,12 +8012,13 @@ a:hover {
 }
 
 .content {
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 }
 
 @media only screen and (min-width: 768px) {
   .content {
-    padding-bottom: 110px;
+    padding-bottom: 100px;
+    min-height: 803px;
   }
 }
 
@@ -8030,6 +8036,11 @@ a:hover {
 
 .primary-nav-color {
   background-color: #064b86;
+}
+
+.navbar {
+  border-radius: 0;
+  padding-left: 15px;
 }
 
 .navbar-collapse li.active > a {
@@ -8105,6 +8116,14 @@ li.active > a {
   width: auto;
 }
 
+.header {
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  boder-radius: 0;
+}
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -8148,8 +8167,6 @@ body {
   font-size: 13px;
   line-height: 1.4;
   color: #666666;
-  height: 100%;
-  padding-top: 100px;
 }
 
 .embed-responsive-16by9 {
@@ -8170,6 +8187,11 @@ body {
 
 .footer {
   padding: 0px;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .footer-section {
@@ -8177,7 +8199,8 @@ body {
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 1.5em;
-  padding: 20px 0 13px;
+  padding: 40px 0 13px;
+  height: 100px;
   word-spacing: 1px;
   position: relative;
   z-index: 3;

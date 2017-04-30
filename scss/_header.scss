@@ -16,6 +16,11 @@ $fontColorHover: #ffffff;
     background-color: $primaryColor;
 }
 
+.navbar {
+    border-radius: 0;
+    padding-left: 15px;
+}
+
 .navbar-collapse li.active > a { 
     color: $borderColor; 
 }
@@ -88,3 +93,11 @@ li.active > a {
     height: 100%;
     width: auto;
 }  
+
+.header {
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    boder-radius: 0;
+}
